@@ -1,0 +1,27 @@
+<script>
+//    let info = {
+//       subjectName : '자바스크립트',
+//       subjectName : '제이쿼리'
+//    }
+
+//    document.write(info.subjectName + '<br>');
+
+   let subjectName = Symbol();
+   let info1 = {
+      [subjectName] : '자바스크립트',
+      subjectName : '제이쿼리'
+   }
+
+   document.write(info1[subjectName] + ' , ' + info1.subjectName + '<br>');
+</script>
+
+
+
+
+
+
+
+
+
+
+

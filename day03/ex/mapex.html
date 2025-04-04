@@ -1,0 +1,18 @@
+<script>
+   let base = [10,20,30];
+   base.map(
+     function(value,index,array){
+        document.writeln(value);
+            document.writeln(index);
+            document.writeln(array);
+     }
+   );
+ 
+   let area = base.map(
+     function(value) { 
+        return value*2;
+     }
+   );
+   
+   console.log(area.toString());
+</script>

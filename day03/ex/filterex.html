@@ -1,0 +1,23 @@
+<script>
+   let data = ['javascript',20,30,'jQuery'];
+
+   data.filter(
+    function(value,index,array){
+        console.log(value);
+        console.log(index);
+        console.log(array);
+
+    }
+   );
+
+   let number = data.filter(
+    function(value){
+        return typeof value === 'number';
+
+    }
+   );
+
+   console.log(number.toString());
+
+
+</script>

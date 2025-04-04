@@ -1,0 +1,20 @@
+<script>
+let score = {
+ 
+     subject : 'CSS',
+     credit :  1 ,
+     printOut : function() {
+        return this.subject + " , " + this.credit + '학점';
+     }
+}
+
+document.write(score.printOut() + '<br>');
+
+score.days = 20;
+document.write(score.days + '<br>');
+
+score.printOut = function() {
+    return this.subject + " , " + this.credit + '학점' + " , " + this.days +'일';
+}
+document.write(score.printOut() + '<br>');
+</script>

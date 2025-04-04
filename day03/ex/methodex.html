@@ -1,0 +1,22 @@
+<script>
+   let city = ['서울','대구','대전','부산'];
+
+   for(let i in city) {
+    document.writeln(city[i] + '<br>');  //city배열의 index 출력
+       }
+
+    for(let i of city) {
+    document.writeln(i + '<br>');  //city배열의 index 출력
+       }
+
+       document.write('<br>');
+    city.forEach(
+        
+          function (value,index,city){
+            document.writeln(value);
+            document.writeln(index);
+            document.writeln(city);
+
+          }); 
+
+</script>
